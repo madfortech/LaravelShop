@@ -1,0 +1,11 @@
+@props(['title'])
+<div {{$attributes->class(['bg-white rounded-lg shadow p-4 space-y-2'])}}>
+    @if($title)
+        <h2 class="font-medium text-xl">{{$title}}</h2>
+    @endif
+   
+    <div>
+        {{$slots}}
+    </div>
+    
+</div>
